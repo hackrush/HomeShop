@@ -8,7 +8,8 @@ app.secret_key = 'this is a secet key dudes'
 @app.route("/")
 def index():
     result = firebase.get('/', None)
-    return jsonify(result)
+    print( jsonify(result))
+    return render_template("index.html")
 
 
 count = 0
@@ -20,7 +21,7 @@ def fireput():
     count += 1
     putData = {"Name" : form.name.data, "phonenumber" : form.phonenumber.data, "product" : form.product.data,"email":form.email.data}
     firebase.put("/", "" + str(count), putData)
-        # return render_template("api-put-result.html", form=form, putData=putData)
+    return render_template("file.html", form=form, putData=putData)
     print (form.name.data)
     return render_template('users.html',form=form)
 
