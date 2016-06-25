@@ -1,6 +1,7 @@
 {% block content %}
   <h3> Name</h3>
     <p>Name<p>
+    {{ form.csrf_token }}
     <form action="/api/put" method="post" name="api">
       <p> Name <br>
       {{ form.name(size=40) }}<br>

@@ -4,6 +4,7 @@
     <title>HomeShop</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <style>
       html, body {
         height: 100%;
@@ -13,10 +14,20 @@
       #map {
         height: 100%;
       }
+      .resize{
+          height:500px;
+          width:400px;
+      }
     </style>
   </head>
   <body>
-    <div id="map"></div>
+
+      <div class="container resize"  id="map">
+      
+      </div>
+      <div class="well">
+
+          </div>
     <script>
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -30,8 +41,8 @@
               lat: position.coords.latitude,
               lng: position.coords.longitude
             };
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('You are here.');
+            infoWindow.setPosition(pos); 
+            infoWindow.setContent('You are here.Add you odered {{ form.product }}');
             map.setCenter(pos);
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());

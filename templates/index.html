@@ -23,6 +23,7 @@
 	 				<li><a href="#">Add to Favorites</li></a>
 	 				<li><a href="#">About Us</li></a>
 	 				<li><a href="#">Contact Us</li></a>
+                        <li><a href="/api/put">BUY GOOD</a></li>
 	 			</ul>
 	 	</div><!--end nav area-->
 
@@ -41,10 +42,10 @@
 	 		<div id="payment_area">
 	 			
 	 			<h2>Payments</h2>
-	 				<a class="links" href="#"><img src="payoneer.jpg"></a>
-	 				<a class="links" href="#"><img src="skrill.jpg"></a>
-	 				<a class="links" href="#"><img src="mastercard.jpg"></a>
-	 				<a class="links" href="#"><img src="americanexpress.jpg"></a>
+	 				<a class="links" href="#"><img src="{{url_for('static',filename='payoneer.jpg')}} "></a>
+	 				<a class="links" href="#"><img src="{{url_for('static',filename='skrill.jpg')}}"></a>
+	 				<a class="links" href="#"><img src="{{url_for('static',filename='mastercard.jpg')}}"></a>
+	 				<a class="links" href="#"><img src="{{url_for('static',filename='americanexpress.jpg')}}"></a>
 	 		</div><!--end payments area-->
 	 			
 	 		<div id="Map">
@@ -65,7 +66,7 @@
 
 	 	<div id="product_and_details">
 	 		<div id="product">
-	 			<img src="camera.png">
+	 			<img src="{{url_for('static',filename='camera.png')}}">
 	 		</div>
 	 			<div id="details">
 	 			<h2>Digital Camera</h2>
@@ -92,7 +93,7 @@
 
 				 		<div id="product_container">
 				 			<div id="images">
-				 				<img src="products/nicon.png">
+				 				<img src="{{url_for('static',filename='products/nicon.png')}}">
 				 			</div>
 				 			<h3>Digital Camera</h3>
 				 			<ul>
@@ -111,7 +112,7 @@
 
  		<div id="product_container">
  			<div id="images">
- 				<img src="products/printer.png">
+ 				<img src="{{url_for('static',filename='products/printer.png')}}">
  			</div>
  			<h3>Digital Camera</h3>
  			<ul>
@@ -127,7 +128,7 @@
  		</div>
 				 	    <div id="product_container">
 				 	    	 <div id="images">
-				 				<img src="products/watch.png">
+				 				<img src="{{url_for('static',filename='products/watch.png')}}">
 				 			</div>
 				 			<h3>Digital Camera</h3>
 				 				<ul>
@@ -145,7 +146,7 @@
 
 		<div id="product_container">
 			 <div id="images">
-				<img src="products/dell.png">
+				<img src="{{url_for('static',filename='products/dell.png')}}">
 			</div>
 			<h3>Digital Camera</h3>
 				<ul>
@@ -162,7 +163,7 @@
 		</div>
 				 	    <div id="product_container">
 				 	    	 <div id="images">
-				 				<img src="products/iphone.png">
+				 				<img src="{{url_for('static',filename='products/iphone.png')}}">
 				 			</div>
 				 			<h3>Digital Camera</h3>
 				 				<ul>
@@ -180,7 +181,7 @@
 				 		
 				 		<div id="product_container">
 				 			 <div id="images">
-				 				<img src="products/bag.png">
+				 				<img src="{{url_for('static',filename='products/bag.png')}}">
 				 			</div>
 				 			<h3>Digital Camera</h3>
 				 				<ul>
