@@ -1,0 +1,28 @@
+{% block content %}
+<h3> Complete below</h3>
+<p>Please complete the form below<p>
+<form action="" method="post" name="api">
+<p> Name<br>
+{{ form.name(size=40) }}<br>
+{% for error in form.name.errors %}
+<span style="color: red;">[{{ error }}]</span>
+{% endfor %}<br>
+<p>Phone: <br>
+{{ form.phonenumber(size=40) }} <br>
+{% for error in form.phonenumber.errors %}
+<span style="color: red;">[{{ error }}]</span>
+{% endfor %}<br>
+<p> Email <br>
+  {{ form.email(size=40) }} <br>
+{% for error in form.email.errors %}
+   <span style="color: red;">[{{ error }}]</span>
+  % endfor %}<br>
+
+  <p> product <br>
+    {{ form.product(size=40) }} <br>
+  {% for error in form.product.errors %}
+     <span style="color: red;">[{{ error }}]</span>
+    % endfor %}<br>
+<p><input type ="submit" value="Add" class="btn btn-sm btn-primary"></p>
+ </form>
+ {% endblock %}
