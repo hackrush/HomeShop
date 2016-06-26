@@ -3,7 +3,7 @@ from firebase import firebase
 from forms import FirePut
 
 app=Flask(__name__,template_folder="./templates")
-firebase = firebase.FirebaseApplication('https://shophome-8b5ad.firebaseio.com', None)
+firebase = firebase.FirebaseApplication('https://.firebaseio.com', None)
 app.secret_key = 'this is a secet key dudes'
 
 
